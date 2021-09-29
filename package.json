@@ -1,20 +1,23 @@
 {
-  "name": "code-front",
+  "name": "code-tront-vite2",
   "version": "0.0.0",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
+    "dev": "vite --host",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview",
     "lint": "eslint \"src/**/*.{js,vue}\"",
     "test": "jest --runInBand"
   },
   "dependencies": {
-    "autoprefixer": "^10.3.6",
-    "postcss": "^8.3.8",
-    "vue": "^3.0.4"
+    "vue": "^3.2.13"
   },
   "devDependencies": {
-    "vite": "^1.0.0-rc.13",
-    "@vue/compiler-sfc": "^3.0.4",
+    "@vitejs/plugin-vue": "^1.9.0",
+    "autoprefixer": "^10.3.6",
+    "postcss": "^8.3.8",
+    "typescript": "^4.4.3",
+    "vite": "^2.5.10",
+    "vue-tsc": "^0.3.0",
     "@vue/eslint-config-prettier": "^6.0.0",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",
